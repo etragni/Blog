@@ -1247,7 +1247,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    kapp-controller.carvel.dev/version: v0.23.0
+    kapp-controller.carvel.dev/version: v0.30.0
     kapp.k14s.io/change-rule: upsert after upserting apps.kappctrl.k14s.io/kapp-controller-config
   name: kapp-controller
   namespace: tkg-system
@@ -1275,7 +1275,7 @@ spec:
               fieldPath: metadata.namespace
         - name: KAPPCTRL_API_PORT
           value: "10350"
-        image: projects.registry.vmware.com/tkg/kapp-controller:v0.23.0_vmware.1
+        image: projects.registry.vmware.com/tkg/kapp-controller:v0.30.0_vmware.1
         name: kapp-controller
         ports:
         - containerPort: 10350
