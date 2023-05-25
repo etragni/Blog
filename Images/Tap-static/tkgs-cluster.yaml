@@ -6,7 +6,7 @@ metadata:
 spec:
   topology:
     controlPlane:
-      replicas: 1
+      replicas: 3
       vmClass: <your_VM_class>
       storageClass: <your_storage_class>
       tkr:  
